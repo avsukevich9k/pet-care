@@ -1,0 +1,26 @@
+.service-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 224px;
+    padding: 52px 30px 37px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+
+    &-blue {
+        border: var(--border-blue);
+        background: var(--color-gradient-blue);
+    }
+
+    &-gold {
+
+        border: var(--border-gold);
+        background: var(--color-gradient-gold);
+    }
+
+    &-title {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,36 @@
+.testimonial {
+    margin-bottom: 60px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        position: relative;
+        margin-bottom: 45px;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 117px;
+            height: 3px;
+            background: var(--color-blue);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        width: 100%;
+
+        @include tablet{
+            margin-top: 40px;
+        }
+    }
+}

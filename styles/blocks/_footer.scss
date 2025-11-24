@@ -1,0 +1,149 @@
+.footer {
+  background-color: var(--color-mint);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 95px;
+
+    @include desktop-s {
+      row-gap: 75px;
+    }
+
+    @include mobile {
+      row-gap: 50px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    row-gap: 58px;
+
+    @include desktop-s {
+      padding-top: 60px;
+      row-gap: 35px;
+    }
+
+    @include mobile {
+      padding-top: 40px;
+    }
+  }
+
+  &__title {
+    font-family: var(--third-family);
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include desktop-s {
+      justify-content: space-around;
+      column-gap: 30px;
+    }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+      row-gap: 30px;
+    }
+  }
+
+  &__contacts {
+
+    display: flex;
+    column-gap: 28px;
+
+    @include desktop-s {
+      column-gap: 5px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+
+    &-item {
+      display: flex;
+      max-width: 261px;
+      flex-direction: column;
+      row-gap: 12px;
+
+      @include tablet {
+        text-align: center;
+      }
+    }
+
+    &-address {
+      font-size: 22px;
+      color: var(--color-blue);
+    }
+
+    &-description p {
+      display: flex;
+      color: #757777;
+    }
+  }
+
+  &__extra {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 35px 24px;
+
+    @include desktop-s {
+      flex-direction: column-reverse;
+      row-gap: 20px;
+      padding-block: 30px 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: var(--conainer-big-width);
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: #ccc;
+    }
+  }
+
+  &__copyright p {
+    color: #414141;
+    text-align: center;
+  }
+
+  &__menu {
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 55px;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+      }
+    }
+
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      height: 30px;
+      font-family: var(--third-family);
+      font-weight: 400;
+    }
+  }
+}

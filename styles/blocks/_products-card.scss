@@ -1,0 +1,107 @@
+.products-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 47px;
+
+    @include desktop-s {
+        row-gap: 35px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+            row-gap: 20px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        column-gap: 130px;
+
+        @include desktop-s {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop-s {
+            align-items: center;
+        }
+    }
+
+    &__image-wrapper {
+        position: relative;
+
+        &::after {
+            @include abs-center;
+            position: absolute;
+            content: '';
+            top: 87%;
+            left: 43%;
+            width: 116%;
+            height: 62%;
+            background: url('../../icons/ProductIcons/Puddle1.svg') no-repeat center / cover;
+            z-index: -1;
+
+            @include desktop-s {
+                width: 175%;
+                left: 50%;
+            }
+        }
+
+        &--yellow::after {
+            background: url('../../icons/ProductIcons/Puddle2.svg') no-repeat center / cover;
+            width: 118%;
+            height: 63%;
+
+            @include desktop-s {
+                width: 132%;
+            }
+        }
+
+        &--blue::after {
+            background: url('../../icons/ProductIcons/Puddle3.svg') no-repeat center / cover;
+            width: 116%;
+            height: 58%;
+
+            @include desktop-s {
+                width: 169%;
+            }
+        }
+    }
+
+    &__title {
+        padding-top: 67px;
+
+        @include desktop-s {
+            padding-top: 60px;
+        }
+    }
+
+    &__description p {
+        max-width: 300px;
+        padding-bottom: 25px;
+        color: #979697;
+        
+        @include desktop-s {
+            padding-bottom: 15px;
+            text-align: center;
+        }
+    }
+}

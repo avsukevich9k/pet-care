@@ -9,7 +9,518 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Pet Care</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="header__inner container">
+            <a class="header__logo">
+                <svg width="49" height="47" viewBox="0 0 49 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25.222 24.1205C24.8738 28.3052 28.364 29.274 31.1922 33.1748C35.4012 38.7716 39.568 37.7766 40.7511 34.2593C41.8773 30.8788 38.77 27.9845 39.0663 24.2593C39.3627 20.534 43.0873 17.5915 42.5636 14.167C42.0399 10.7425 38.0188 9.71343 32.8022 15.2432C29.2678 19.0664 25.6888 19.9849 25.222 24.1205Z"
+                        fill="#FFE55E" />
+                    <path
+                        d="M19.176 12.8774C21.8041 15.252 25.2226 15.3892 26.7811 13.3107C28.3397 11.2322 27.4603 7.65995 24.7753 5.42218C22.1472 3.04766 18.7287 2.91038 17.1702 4.98888C15.6685 6.93063 16.5479 10.5029 19.176 12.8774Z"
+                        fill="#FFAA00" />
+                    <path
+                        d="M11.2505 23.2065C14.8542 23.9018 18.3665 22.4746 19.0902 19.7285C19.757 17.1193 17.4179 14.3837 13.6956 13.6392C10.0919 12.944 6.57956 14.3712 5.85591 17.1172C5.18906 19.7265 7.64675 22.5113 11.2505 23.2065Z"
+                        fill="#FFAA00" />
+                    <path
+                        d="M11.856 35.8499C15.4597 36.5451 18.972 35.1179 19.6956 32.3719C20.3625 29.7626 18.0234 27.0271 14.3011 26.2825C10.6973 25.5873 7.18503 27.0145 6.46138 29.7605C5.79453 32.3698 8.25222 35.1546 11.856 35.8499Z"
+                        fill="#FFAA00" />
+                </svg>
+                <span class="header__logo-orange">Pup</span>
+                <span class="header__logo-yellow">Hub</span>
+            </a>
+            <nav class="header__menu hidden-desktop-s">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link"> our services</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link"> about us</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link"> Products</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link"> Pet Care </a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/" class="header__menu-link"> contact </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__buttons hidden-desktop-s">
+                <button class="header__button button" type="button">Sign In</button>
+                <button class="header__button button button-blue" type="button">Register</button>
+            </div>
+            <button class="header__burger-button burger-button visible-desktop-s" type="button"
+                onclick="desktopOverlay.showModal()">
+                <span class="visually-hidden">Open navigation menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="content">
+        <section class="hero container--big">
+            <div class="hero__inner">
+                <svg class="hero__bg" width="1500" height="859" viewBox="0 0 1438 759" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M-229.833 67.102C-251.115 25.3183 -163.359 11.7743 -19.7981 11.6652C-13.9161 4.48123 -10.5947 0 -10.5947 0L-12.8371 11.6703C310.973 12.3803 907.537 78.5979 1188.13 46.5962C1596.69 0 1317.05 536.151 1410.69 515.018C1504.33 493.885 1349.39 779.181 1043.69 757.842C737.985 736.503 176.067 502.952 174.033 616.726C171.998 730.501 -125.033 595.593 -125.033 595.593L-12.8371 11.6703C-15.1717 11.6652 -17.4921 11.6634 -19.7981 11.6652C-53.4708 52.7913 -171.06 182.492 -229.833 67.102Z"
+                        fill="#FFF2B3" fill-opacity="0.64" />
+                </svg>
+                <div class="hero__content">
+                    <div class="hero__main">
+                        <h1 class="hero__title">Taking care<br> for your Smart Dog!</h1>
+                        <div class="hero__description">
+                            <p>Human-canine bonding is the relationship <br> between dogs and humans.</p>
+                        </div>
+                        <button class="hero__button button button--big" type="button">Explore More</button>
+                    </div>
+                    <div class="hero__image">
+                        <div class="hero__image-bg">
+                            <svg width="670" height="685" viewBox="0 0 536 522" fill="none" class="hero__image-svg"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M515.507 86.5978C542.236 139.434 536.595 206.665 528.014 260.76C519.741 315.273 508.835 357.068 489.516 393.536C470.556 430.056 443.234 460.882 408.774 482.453C374.724 503.709 333.177 515.657 285.008 519.92C236.788 524.549 181.227 521.389 129.579 495.239C77.8802 469.456 29.7349 420.632 9.91398 360.194C-9.49736 299.441 -0.58424 227.074 38.2481 181.833C76.671 136.906 145.013 119.105 205.184 86.2913C265.714 53.5291 318.123 5.38737 374.082 0.379764C429.989 -4.26128 489.087 34.18 515.507 86.5978Z"
+                                    fill="#F1C21B" />
+                            </svg>
+                        </div>
+                        <img src="./images/HeroImages/cute-smiley-dog-.png" width="520" height="543"
+                            class="hero__image-photo">
+                        <img class="hero__image-paw1 hidden-mobile " src="./icons/HeroIcons/SmallPaw1.svg"
+                            alt="Dog Paw">
+                        <img class="hero__image-paw2 hidden-mobile " src="./icons/HeroIcons/SmallPaw2.svg"
+                            alt="Dog Paw">
+                        <img class="hero__image-paw3 hidden-mobile " src="./icons/HeroIcons/SmallPaw3.svg"
+                            alt="Dog Paw">
+                        <img class="hero__image-dog1 hidden-mobile " src="./images/HeroImages/DogImage1.png"
+                            alt="Dog" width="65" height="65">
+                        <img class="hero__image-dog2 hidden-mobile " src="./images/HeroImages/DogImage2.png"
+                            alt="Dog" width="65" height="65">
+                        <img class="hero__image-dog3 hidden-mobile " src="./images/HeroImages/DogImage3.png"
+                            alt="Dog" width="65" height="65">
+                        <img class="hero__image-smallpaw1" src="./icons/HeroIcons/SuperSmallPaw.png" alt="Small Dog Paw"
+                            width="45" height="45">
+                        <img class="hero__image-smallpaw2" src="./icons/HeroIcons/SuperSmallPaw.png" alt="Small Paw"
+                            width="45" height="45">
+                        <img class="hero__image-smallpaw3" src="./icons/HeroIcons/SuperSmallPaw.png" alt="Small Paw"
+                            width="45" height="45">
+                        <img class="hero__image-smallpaw4" src="./icons/HeroIcons/SuperSmallPaw.png" alt="Small Paw"
+                            width="45" height="45">
+                        <img class="hero__image-smallpaw5" src="./icons/HeroIcons/SuperSmallPaw.png" alt="Small Paw"
+                            width="45" height="45">
+                        <img class="hero__image-smallpaw6" src="./icons/HeroIcons/SuperSmallPaw.png" alt="Small Paw"
+                            width="45" height="45">
+                        <img class="hero__image-smallpaw7" src="./icons/HeroIcons/SuperSmallPaw.png" alt="Small Paw"
+                            width="45" height="45">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services container--big">
+            <div class="services__inner container">
+                <heder class="services__header">
+                    <h3 class="services__title">Services Category </h3>
+                </heder>
+                <div class="services__body">
+                    <ul class="services__list">
+                        <li class="services__item">
+                            <article class="service-card service-card-blue">
+                                <img class="service-card__image" src="./icons/ServicesIcons/Icon1.svg" alt="">
+                                <h4 class="service-card__title">Grooming</h4>
+                            </article>
+                        </li>
+                        <li class="services__item">
+                            <article class="service-card  service-card-gold">
+                                <img class="service-card__image" src="./icons/ServicesIcons/Icon2.svg" alt="">
+                                <h4 class="service-card__title">Healthcare</h4>
+                            </article>
+                        </li>
+                        <li class="services__item">
+                            <article class="service-card  service-card-blue">
+                                <img class="service-card__image" src="./icons/ServicesIcons/Icon3.svg" alt="">
+                                <h4 class="service-card__title">Daycare</h4>
+                            </article>
+                        </li>
+                        <li class="services__item">
+                            <article class="service-card service-card-gold">
+                                <img class="service-card__image" src="./icons/ServicesIcons/Icon4.svg" alt="">
+                                <h4 class="service-card__title">Training</h4>
+                            </article>
+                        </li>
+                        <li class="services__item">
+                            <article class="service-card service-card-blue">
+                                <img class="service-card__image" src="./icons/ServicesIcons/Icon5.svg" alt="">
+                                <h4 class="service-card__title">Hyginic care</h4>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="about-us__inner container">
+                <div class="about-us__header">
+                    <img class="about-us__image" src="./images/AboutImages/BigFunDog.png" alt="BigDog" width="761"
+                        height="750">
+                    <img class="about-us__image-videobutton" src="/images/AboutImages/VideoButton.png" alt=""
+                        width="173" height="150">
+                    <img class="about-us__image-food" src="/images/AboutImages/DogFood.svg" alt="" width="72"
+                        height="48">
+                </div>
+                <div class="about-us__body">
+                    <h2 class="about-us__title">Dogs do speak, but only to those who know how to listen.</h2>
+                    <div class="about-us__description">
+                        <p>Sweet roll ice cream powder candy canes ice cream donut pudding biscuit ice cream. Cupcake
+                            tootsie roll sugar plum danish pudding fruitcake cheesecake jelly-o. Pie muffin topping
+                            cake. Pudding biscuit caramels topb</p>
+                    </div>
+                    <button class="about-us__button button button--big" type="button">Explore More</button>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="products__inner container">
+                <header class="products__header">
+                    <h3 class="products__title">Dog Nutrients & Food </h3>
+                </header>
+                <div class="products__body">
+                    <div class="products-card">
+                        <div class="products-card__header">
+                            <h3 class="products-card__header-title big-label">25 <span class="small-label">%</span> OFF
+                                all Products </h3>
+                            <button class="products-card__button button button--big" type="button">View More</button>
+                        </div>
+                        <div class="products-card__body">
+                            <ul class="products-card__list">
+                                <li class="products-card__item">
+                                    <div class="products-card__image-wrapper">
+                                        <img class="products-card__image" src="./images/ProductsImages/PetFood1.png"
+                                            alt="PetFood" width="203" height="312">
+                                    </div>
+                                    <h3 class="products-card__title">Drools | 3KG</h3>
+                                    <div class="products-card__description">
+                                        <p>Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food</p>
+                                    </div>
+                                    <button class="products-card__item-button button button-small" type="button">Buy
+                                        Now</button>
+                                </li>
+                                <li class="products-card__item products-card__item">
+                                    <div class="products-card__image-wrapper products-card__image-wrapper--yellow">
+                                        <img class="products-card__image" src="./images/ProductsImages/PetFood2.png"
+                                            alt="PetFood" width="275" height="312">
+                                    </div>
+                                    <h3 class="products-card__title">Canine Creek 4 KG</h3>
+                                    <div class="products-card__description">
+                                        <p>Adult chicken and egg Egg, Chicken 3 kg Dry Adult Dog Food</p>
+                                    </div>
+                                    <button class="products-card__item-button button button-small" type="button">Buy
+                                        Now</button>
+                                </li>
+                                <li class="products-card__item products-card__item">
+                                    <div class="products-card__image-wrapper products-card__image-wrapper--blue">
+                                        <img class="products-card__image" src="./images/ProductsImages/PetFood3.png"
+                                            alt="PetFood" width="205" height="333">
+                                    </div>
+                                    <h3 class="products-card__title">Biscork Biscuits</h3>
+                                    <div class="products-card__description">
+                                        <p>Adult chicken and egg Egg, Chicken Dry Adult Dog Food</p>
+                                    </div>
+                                    <button class="products-card__item-button button button-small" type="button">Buy
+                                        Now</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="details container--big">
+            <div class="details__inner container">
+                <div class="details__body">
+                    <h2 class="details__title">No one appreciates the very special genius of your conversation as the
+                        dog does.</h2>
+                    <div class="details__description">
+                        <p>Sweet roll ice cream powder candy canes ice cream donut pudding biscuit ice cream.biscuit
+                            caramels topb</p>
+                    </div>
+                    <button class="details__button button button--big" type="button">Explore More</button>
+                </div>
+                <div class="details__image-wrapper">
+                    <img class="details__image" src="/images/DetailsImages/ManWithDog.png" alt="ManWithDog" width="501"
+                        height="671">
+                    <img class="details__decor details__decor--paw" src="/images/DetailsImages/DogPaw.png" alt="Paw"
+                        width="65" height="65">
+                    <img class="details__decor details__decor--ball" src="/images/DetailsImages/DogBall.png" alt="Ball"
+                        width="62" height="62">
+                    <img class="details__decor details__decor--collar" src="/images/DetailsImages/DogCollar.png" alt="Collar">
+                    <img class="details__decor details__decor--bone" src="/images/DetailsImages/DogBone.png" alt="Bone">
+                </div>
+            </div>
+        </section>
+        <section class="testimonial container">
+            <div class="testimonial__inner">
+                <header class="testimonial__header">
+                    <h3 class="testimonial__title">Happy Customer </h3>
+                </header>
+                <div class="testimonial__body">
+                    <div class="testimonial-card">
+                        <ul class="testimonial-card__list">
+                            <li class="testimonial-card__item">
+                                <div class="testimonial-card__header">
+                                    <img class="testimonial-card__image"
+                                        src="/images/TestimonialImages/WomenWithDog1.png" alt="WomenWithDog" width="323"
+                                        height="324">
+                                </div>
+                                <div class="testimonial-card__body">
+                                    <h3 class="testimonial-card__title">Anna & Tobby</h3>
+                                    <div class="testimonial-card__description">
+                                        <p>Amazing Products & Delivery on time.</p>
+                                    </div>
+                                    <div class="testimonial-card__rating">
+                                        <ul class="testimonial-card__rating-list">
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating--item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/BorderBone.png" alt="">
+                                            </li>
+                                        </ul>
+                                        <span class="testimonial-card__rating-grade">4.2/5</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="testimonial-card__item">
+                                <div class="testimonial-card__header">
+                                    <img class="testimonial-card__image"
+                                        src="./images/TestimonialImages/WomenWithDog2.png" alt="WomenWithDog" width="330"
+                                        height="363">
+                                </div>
+                                <div class="testimonial-card__body">
+                                    <h3 class="testimonial-card__title">Christine & Tom</h3>
+                                    <div class="testimonial-card__description">
+                                        <p>Love the overall Shpping experience!</p>
+                                    </div>
+                                    <div class="testimonial-card__rating">
+                                        <ul class="testimonial-card__rating-list">
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                        </ul>
+                                        <span class="testimonial-card__rating-grade">4.2/5</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="testimonial-card__item">
+                                <div class="testimonial-card__header">
+                                    <img class="testimonial-card__image"
+                                        src="/images/TestimonialImages/WomenWithDog3.png" alt="WomenWithDog" width="292"
+                                        height="433">
+                                </div>
+                                <div class="testimonial-card__body">
+                                    <h3 class="testimonial-card__title">Sindy & Kitch</h3>
+                                    <div class="testimonial-card__description">
+                                        <p>Kitch is love food from the pup-hub </p>
+                                    </div>
+                                    <div class="testimonial-card__rating">
+                                        <ul class="testimonial-card__rating-list">
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                            <li class="testimonial-card__rating-item">
+                                                <img class="testimonial-card__rating-image"
+                                                    src="/images/TestimonialImages/FullBone.png" alt="">
+                                            </li>
+                                        </ul>
+                                        <span class="testimonial-card__rating-grade">4.2/5</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="testimonial__footer">
+                    <button class="testimonial__button button button--big" type="button">Explore More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container--big">
+        <div class="footer__inner container">
+            <div class="footer__header">
+                <h2 class="footer__title">Join us with Affiliate program</h2>
+                <form class="footer__form join-form">
+                    <div class="join-form__inner">
+                        <label for="submit-email" class="join-form__label visually-hidden"
+                            for="submit-email">Email</label>
+                        <div class="join-form__input-wrapper">
+                            <input class="join-form__input" type="email" name="email" id="submit-email"
+                                placeholder="Type your email address here" required>
+                        </div>
+                        <button class="join-form__button button button--big" type="submit">Submit now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer__body">
+                <div class="footer__soc1als soc1als ">
+                    <span class="soc1als__title">Follow on social</span>
+                    <ul class="soc1als__list">
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <span class="visually-hidden">Facebook</span>
+                                <svg width="18" height="30" viewBox="0 0 18 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1446 7.36726C12.1857 7.32103 12.3776 7.16997 13.1314 7.16997L15.6029 7.16905C16.4069 7.16905 17.0608 6.51628 17.0608 5.71382V1.40259C17.0608 0.601503 16.4079 -0.0512695 15.6052 -0.0526428L11.9341 -0.0585938C9.66831 -0.0585938 7.74217 0.687334 6.3639 2.09885C4.99182 3.50396 4.26645 5.46548 4.26645 7.77101V10.0962H1.45808C0.654048 10.0962 0 10.749 0 11.5515V16.1946C0 16.997 0.654048 17.6498 1.45808 17.6498H4.26645V28.4862C4.26645 29.2887 4.9205 29.9415 5.72453 29.9415H10.5382C11.3422 29.9415 11.9962 29.2887 11.9962 28.4862V17.65H15.4291C16.2331 17.65 16.8869 16.997 16.8869 16.195L16.8888 11.5517C16.8888 11.0246 16.6014 10.5368 16.1386 10.2789C15.9242 10.1594 15.6747 10.0962 15.4174 10.0962H11.9962V8.25922C11.9962 7.66046 12.077 7.44371 12.1446 7.36726Z"
+                                        fill="#5B5B5B" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="soc1als__item">
+                            <a class="soc1als__link" href="/">
+                                <span class="visually-hidden">Instagram</span>
+                                <svg width="29" height="29" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                                        fill="#5B5B5B" />
+                                    <path
+                                        d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                        fill="#5B5B5B" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z"
+                                        fill="#5B5B5B" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts-item">
+                        <span class="footer__contacts-title">Boarding & Day care</span>
+                        <address class="footer__contacts-address">
+                            <a href="(616)-459-8622">(616)-459-8622</a>
+                        </address>
+                        <div class="footer__contacts-description">
+                            <p>2125 Howard Street ,Grand Rapids, MI Michigan</p>
+                        </div>
+                    </div>
+                    <div class="footer__contacts-item">
+                        <span class="footer__contacts-title">Health care</span>
+                        <address class="footer__contacts-address">
+                            <a href="(616)-566-5896">(616)-566-5896</a>
+                        </address>
+                        <div class="footer__contacts-description">
+                            <p>2125 Howard Street ,Grand Rapids, MI Michigan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer__extra">
+            <div class="footer__copyright">
+                <p> © all rights reserved & design with love by bharat</p>
+            </div>
+            <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                        <a href="/" class="footer__menu-link">Our services</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="/" class="footer__menu-link">About us </a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="/" class="footer__menu-link">Shipping</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="/" class="footer__menu-link">FAQ</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="/" class="footer__menu-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        </div>
+    </footer>
+
+    <dialog class="desktop-s-overlay  visible-desktop-s" id="desktopOverlay">
+        <form class="desktop-s-overlay__close-button-wrapper" method="dialog">
+            <button class="desktop-s-overlay__close-button cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="desktop-s-overlay__body">
+            <ul class="desktop-s-overlay__list">
+                <li class="desktop-s-overlay__item">
+                    <a href="/" class="desktop-s-overlay__link">Our services</a>
+                </li>
+                <li class="desktop-s-overlay__item">
+                    <a href="/" class="desktop-s-overlay__link">About us </a>
+                </li>
+                <li class="desktop-s-overlay__item">
+                    <a href="/" class="desktop-s-overlay__link">Products </a>
+                </li>
+                <li class="desktop-s-overlay__item">
+                    <a href="/" class="desktop-s-overlay__link">Pet Care</a>
+                </li>
+                <li class="desktop-s-overlay__item">
+                    <a href="/" class="desktop-s-overlay__link">Contact </a>
+                </li>
+            </ul>
+            <div class="desktop-s-overlay__buttons">
+                <button class="desktop-s-overlay__button button" type="button">Sign In</button>
+                <button class="desktop-s-overlay__button button button-blue" type="button">Register</button>
+            </div>
+        </div>
+    </dialog>
 </body>
+
 </html>

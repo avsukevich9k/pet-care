@@ -1,0 +1,28 @@
+.products {
+    margin-bottom: 69px;
+
+    @include tablet{
+        padding-top: 72px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        row-gap: 38px;
+    }
+
+    &__title{
+          position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            left: 0;
+            width: 117px;
+            height: 3px;
+            background: var(--color-blue);
+        }
+    }
+}

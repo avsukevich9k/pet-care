@@ -1,37 +1,59 @@
-body{
-   @include fluid-text(19,17);
-    
+body {
+   @include fluid-text(19, 17);
+
    font-family: var(--font-family-base);
-   font-weight: 400;
+   font-weight: 700;
    line-height: 1.38;
    color: var(--color-dark);
    background-attachment: var(--color-light);
 }
 
+h1,
+h2{
+   font-family: var(--second-family);
+}
+
+h3,
+h4,
+h5 {
+   font-family: var(--fourth-family);
+   font-weight: 400;
+}
+
+p {
+   color: var(--color-dark-alt);
+   font-weight: 400;
+}
+
 a,
 button,
-input,textarea,
-svg *{
-transition-duration: var(--transition-duration);
+input,
+textarea,
+svg * {
+   transition-duration: var(--transition-duration);
 }
 
-a{
-text-decoration: none;
-color: inherit;
+a {
+   text-decoration: none;
+   color: inherit;
 }
 
-h1{
-   @include fluid-text(44,32)
+h1 {
+   @include fluid-text(44, 36)
 }
-h2{
-   @include fluid-text(34,24)
+
+h2 {
+   @include fluid-text(34, 30)
 }
-h3{
-   @include fluid-text(28,20)
+
+h3 {
+   @include fluid-text(28, 23)
 }
-h4{
-   @include fluid-text(25,18)
+
+h4 {
+   @include fluid-text(20, 16)
 }
-h5{
- @include fluid-text(14,15)
+
+h5 {
+   @include fluid-text(14, 15)
 }

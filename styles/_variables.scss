@@ -2,29 +2,40 @@
     --color-blue: #124c5f;
     --color-light: #ffffff;
     --color-blue-light: #c7e7e1;
+    --color-blue-pale: #98f2e1;
     --color-dark: #000;
-    --color-yellow: #ddca69;
-    --color-gray:  #4e4c46;
+    --color-dark-alt: #181817;
+    --color-yellow: #fff1a6;
+    --color-gray: #4e4c46;
     --color-grey-alt: #c4c4c4;
-    --color-blue: #98f2e1;
     --color-gold: #ffee94;
+    --color-orange: #ffaa00;
+    --color-yellow-alt:#ffe55e;
+    --color-mint: #f6faf9;
 
-    --color-gradient: linear-gradient(180deg, #fffae0 0%, rgba(255, 255, 255, 0) 100%);
+    --color-gradient-gold: linear-gradient(180deg, #fffae0 0%, rgba(255, 255, 255, 0) 100%);
+    --color-gradient-blue: linear-gradient(180deg, #f9fffe 0%, rgba(255, 255, 255, 0) 100%);
 
     --border-gold: 1px solid var(--color-gold);
-    --border-blue: 1px solid var(--color-blue);
+    --border-blue: 1px solid var(--color-blue-pale);
 
     --box-shadow: 0 4px 74px 0 rgba(199, 231, 225, 0.27);
 
     --border-radius: 25px;
     --border-radius-small: 5px;
 
-    --button-height: 49px;
+    --conainer-width: 1180px;
+    --container-mid-width: 1320px;
+    --conainer-big-width: 1540px;
+    --container-padding-x: 20px;
 
-    --font-family-base:  "Roboto", sans-serif;
+    --button-height: 49px;
+    --button-height-big: 59px;
+
+    --font-family-base: "Roboto", sans-serif;
+    --second-family: "Glades Bold", sans-serif;
+    --third-family: "Pangolin", sans-serif;
+    --fourth-family: "Rubik", sans-serif;
 
     --transition-duration: 0.2s;
-
-
-
 }

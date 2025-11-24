@@ -1,0 +1,71 @@
+.header {
+    padding-top: 42px;
+
+    @include desktop-s{
+        padding-top: 20px;
+    }
+
+     @include mobile{
+        padding-top: 15px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 25px;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+
+        &-orange {
+            color: var(--color-orange);
+        }
+
+        &-yellow {
+            color: var(--color-yellow-alt);
+        }
+    }
+
+    svg {
+        path {
+            color: var(--color-yellow-alt);
+
+            &:first-child {
+                color: var(--color-orange);
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        column-gap: 40px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            column-gap: 42px;
+        }
+
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            height: 30px;
+            font-size: 15px;
+            font-family: var(--second-family);
+            font-weight: 700;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        column-gap: 14px;
+    }
+
+    &__button {
+        font-family: var(--second-family);
+    }
+}

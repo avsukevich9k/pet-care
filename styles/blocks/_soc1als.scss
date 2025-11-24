@@ -1,0 +1,25 @@
+.soc1als {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    @include tablet{
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 28px;
+    }
+
+    &__link {
+        @include flex-center(true);
+        @include square(58px);
+
+        color: var(--color-gray);
+        background-color: var(--color-grey-alt);
+        border-radius: 50%;
+    }
+}

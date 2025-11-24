@@ -1,0 +1,216 @@
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+
+    @include tablet {
+        background-color: #FFF2B3;
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: 0;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 35px;
+        padding-top: 100px;
+
+        @include desktop-s {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            padding-top: 75px;
+        }
+
+        @include tablet {
+            padding-top: 35px;
+        }
+
+        @include mobile {
+            padding-top: 10px;
+        }
+    }
+
+    &__button {
+        font-family: var(--second-family);
+    }
+
+    &__main {
+        display: flex;
+        max-width: 506px;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-top: 50px;
+        padding-left: 10px;
+
+        @include desktop-s {
+            padding-top: 30px;
+            row-gap: 15px;
+        }
+
+        @include tablet {
+            padding-bottom: 20px;
+        }
+
+        @include mobile {
+            row-gap: 10px;
+            padding-top: 20px;
+        }
+    }
+
+    &__button {
+        font-family: var(--second-family);
+    }
+
+    &__image {
+        position: relative;
+        max-width: 670px;
+        max-height: 689px;
+
+        @include desktop-s {
+            margin-left: 75px;
+        }
+
+        @include tablet {
+            margin-left: 10px;
+        }
+
+        &-bg {
+            position: relative;
+
+
+            &::after {
+                @include abs-center;
+                content: '';
+                background: url(../../images/HeroImages/BigPaw.png) no-repeat center / contain;
+                width: 100%;
+                height: 100%;
+                border-bottom-right-radius: 77%;
+                border-bottom-left-radius: 61%;
+                rotate: 359deg;
+            }
+        }
+
+        &-svg {
+            max-width: 670px;
+            max-height: 685px;
+
+            @include tablet {
+                max-width: 400px;
+                max-height: 420px;
+            }
+        }
+
+        &-photo {
+            @include abs-center;
+            z-index: 3;
+            rotate: -5deg;
+            top: 63%;
+            border-bottom-right-radius: 47%;
+            border-bottom-left-radius: 48%;
+
+            @include tablet {
+                top: 52%
+            }
+        }
+
+        &-paw1 {
+            position: absolute;
+            left: 29.49%;
+            top: 4%;
+
+            @include tablet {
+                top: -3%
+            }
+        }
+
+        &-paw2 {
+            position: absolute;
+            left: 87.7%;
+            top: 81.47%;
+        }
+
+        &-paw3 {
+            position: absolute;
+            left: -12.86%;
+            top: 75.44%;
+        }
+
+        &-dog1 {
+            position: absolute;
+            left: -13%;
+            top: 56%;
+
+            @include tablet {
+                left: -20%;
+            }
+        }
+
+        &-dog2 {
+            position: absolute;
+            left: 3%;
+            top: 14%;
+        }
+
+        &-dog3 {
+            position: absolute;
+            left: 88%;
+            top: 1%;
+
+            @include tablet {
+                left: 95%;
+            }
+        }
+
+        &-smallpaw1 {
+            position: absolute;
+            left: 23%;
+            top: 34%
+        }
+
+        &-smallpaw2 {
+            position: absolute;
+            left: 23%;
+            top: 76%;
+            rotate: 316deg;
+        }
+
+        &-smallpaw3 {
+            position: absolute;
+            left: 43%;
+            top: 20%;
+            rotate: 107deg;
+        }
+
+        &-smallpaw4 {
+            position: absolute;
+            left: 61%;
+            top: 29%;
+            rotate: 98deg
+        }
+
+        &-smallpaw5 {
+            position: absolute;
+            left: 65%;
+            top: 11%;
+            rotate: 98deg;
+        }
+
+        &-smallpaw6 {
+            position: absolute;
+            left: 84%;
+            top: 25%;
+            rotate: 133deg;
+        }
+
+        &-smallpaw7 {
+            position: absolute;
+            left: 86%;
+            top: 49%;
+            rotate: 146deg;
+        }
+    }
+}
