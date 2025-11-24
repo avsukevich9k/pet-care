@@ -972,7 +972,7 @@ h5 {
   aspect-ratio: 1;
   position: absolute;
   content: "";
-  background: url(../../icons/AboutUsIcons/PawBig.svg) no-repeat center/contain;
+  background: url(../icons/AboutUsIcons/PawBig.svg) no-repeat center/contain;
   left: 84%;
   top: -102%;
 }
@@ -1050,7 +1050,7 @@ h5 {
   left: 43%;
   width: 116%;
   height: 62%;
-  background: url("../../icons/ProductIcons/Puddle1.svg") no-repeat center/cover;
+  background: url("../icons/ProductIcons/Puddle1.svg") no-repeat center/cover;
   z-index: -1;
 }
 @media (max-width: 1080px) {
@@ -1060,7 +1060,7 @@ h5 {
   }
 }
 .products-card__image-wrapper--yellow::after {
-  background: url("../../icons/ProductIcons/Puddle2.svg") no-repeat center/cover;
+  background: url("../icons/ProductIcons/Puddle2.svg") no-repeat center/cover;
   width: 118%;
   height: 63%;
 }
@@ -1070,7 +1070,7 @@ h5 {
   }
 }
 .products-card__image-wrapper--blue::after {
-  background: url("../../icons/ProductIcons/Puddle3.svg") no-repeat center/cover;
+  background: url("../icons/ProductIcons/Puddle3.svg") no-repeat center/cover;
   width: 116%;
   height: 58%;
 }
@@ -1395,7 +1395,7 @@ h5 {
 .join-form__input-wrapper::before {
   position: absolute;
   content: "";
-  background: url(../../icons/FooterIcons/LetterIcon.svg) no-repeat center/contain;
+  background: url(../icons/FooterIcons/LetterIcon.svg) no-repeat center/contain;
   width: 30px;
   height: 22px;
 }
